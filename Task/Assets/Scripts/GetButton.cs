@@ -1,19 +1,14 @@
 ﻿using UnityEngine;
 
-public class ButtonBehaviour : MonoBehaviour
+public class GetButton : MonoBehaviour
 {
     void Start()
     {
         this.gameObject.SetActive(false);
 
-        GUIManager.LevelUp += delegate (){
-
-            this.gameObject.SetActive(true);
-        };
-
         GUIManager.GetRewardPressed += delegate ()
         {
-            this.gameObject.SetActive(false);
+            this.gameObject.SetActive(true);
         };
 
         GUIManager.RewardChoosed += delegate ()
@@ -22,5 +17,6 @@ public class ButtonBehaviour : MonoBehaviour
         };
 
     }
+
 
 }
