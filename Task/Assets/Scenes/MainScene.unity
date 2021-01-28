@@ -2386,9 +2386,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 1590222154}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 329c3397206b3df4cb52b9d79f78089f, type: 3}
+  m_Script: {fileID: 11500000, guid: 1a2b026f428b41c42a9e65d062c4a3c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnStart:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 754039811}
+        m_MethodName: InitGetButton
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1590222157}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1590222157
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2433,7 +2447,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 754039811}
-        m_MethodName: ChooseReward
+        m_MethodName: PressGetButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2588,7 +2602,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 754039811}
-        m_MethodName: EncreaseLevel
+        m_MethodName: PressAddLevelButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2647,6 +2661,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a2b026f428b41c42a9e65d062c4a3c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnStart:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 754039811}
+        m_MethodName: InitAddLevelButton
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1682585422}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1816412099
 GameObject:
   m_ObjectHideFlags: 0
@@ -3132,7 +3160,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 754039811}
-        m_MethodName: PressGetReward
+        m_MethodName: PressGetRewardButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3188,9 +3216,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 2056027670}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e839181429a5ec45a858c47afa72584, type: 3}
+  m_Script: {fileID: 11500000, guid: 1a2b026f428b41c42a9e65d062c4a3c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnStart:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 754039811}
+        m_MethodName: InitGetRewardButton
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2056027672}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2080121525
 GameObject:
   m_ObjectHideFlags: 0

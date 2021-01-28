@@ -7,10 +7,8 @@ static class RewardsGenerator
         int chance, result;
 
         if (slotNumber == SlotNumber.ONE)
-        {
-            chance = Random.Range(1, 3);
-
-            if (chance == 1) {
+        {          
+            if (Random.Range(1, 3) == 1) {
 
                 result = 1;
             }
