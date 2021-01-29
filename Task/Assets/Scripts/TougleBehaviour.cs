@@ -8,6 +8,7 @@ public class TougleBehaviour : MonoBehaviour
     private Toggle _toggle;
     private Text _label;
     private int? _reward = null;
+    private bool isEven = false;
 
     private void Start()
     {        
@@ -17,8 +18,12 @@ public class TougleBehaviour : MonoBehaviour
         _label = this.gameObject.GetComponentInChildren<Text>();
 
         GUIManager.GetRewardPressed += delegate ()
-        {
-            _reward = RewardsGenerator.Generate(_slotNumber);
+        {        
+            _reward = RewardsGenerator.Generate(_slotNumber, isEven);
+
+            isEven = (isEven) ? false: true;
+
+            
 
             if (_reward != null) {
 
