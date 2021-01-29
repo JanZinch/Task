@@ -9,8 +9,8 @@ public class GUIManager : MonoBehaviour
     public static event Action LevelUp;
     public static event Action GetRewardPressed;
     public static event Action RewardChoosed;
-    private int _currentLevel;
-
+    private int _currentLevel; 
+    
     public void PressAddLevelButton() {
 
         if (LevelUp != null)

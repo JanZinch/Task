@@ -5,10 +5,10 @@ public class TougleBehaviour : MonoBehaviour
 {
     [SerializeField] private SlotNumber _slotNumber = SlotNumber.ONE;
     [SerializeField] private RewardsCounter[] _rewardsImages = null;
+    private bool _levelIsEven = false;
     private Toggle _toggle;
     private Text _label;
     private int? _reward = null;
-    private bool isEven = false;
 
     private void Start()
     {        
@@ -19,12 +19,9 @@ public class TougleBehaviour : MonoBehaviour
 
         GUIManager.GetRewardPressed += delegate ()
         {        
-            _reward = RewardsGenerator.Generate(_slotNumber, isEven);
-
-            isEven = (isEven) ? false: true;
-
-            
-
+            _reward = RewardsGenerator.Generate(_slotNumber, _levelIsEven);
+            _levelIsEven = (_levelIsEven) ? false : true;
+           
             if (_reward != null) {
 
                 _label.text = _reward.ToString();

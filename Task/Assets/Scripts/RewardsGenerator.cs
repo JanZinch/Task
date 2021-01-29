@@ -2,13 +2,13 @@
 
 static class RewardsGenerator
 {
-    public static int? Generate(SlotNumber slotNumber, bool isEven) {
+    public static int? Generate(SlotNumber slotNumber, bool LevelIsEven) {
 
         int chance, result;
 
         if (slotNumber == SlotNumber.ONE)
         {          
-            if (isEven) {
+            if (LevelIsEven) {
 
                 result = 1;
             }
